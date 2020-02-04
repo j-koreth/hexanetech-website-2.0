@@ -44,26 +44,31 @@ li a:hover:not(.active) {
 #companyname {
   float: left;
   font-size: 1.25em;
-  border-right: 1px solid gold;
+  border-right: 2px solid gold;
 
 }
 
 .bluecontainer{
 	padding:20px;
-	margin-top:30px;
 	background-color:skyblue;
-
-
+}
+#header{
+	margin-top:30px;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 435px) {
   ul.navbar, ul.navbar li,.navbaritems, #companyname {
   	float: none !important;
   }
+  #companyname{
+  	  border-bottom: 2px solid gold;
+  }
   .bluecontainer{
 	padding:20px;
-	margin-top:200px;
 	background-color:skyblue;
+  }
+  #header{
+	margin-top:200px;
   }
 }
 
@@ -78,7 +83,7 @@ li a:hover:not(.active) {
   <li class="navbaritems"><a href="#about">About</a></li>
 </ul>
 
-<div style="height:200px;" class="bluecontainer">
+<div id="header" style="height:200px;" class="bluecontainer">
 	<center>
 		<h1>HexaneTech</h1>
 	</center>
