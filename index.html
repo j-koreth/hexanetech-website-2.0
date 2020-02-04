@@ -6,8 +6,7 @@
 <style>
 body {
 	margin:0;
-		font-family: Montserrat, sans-serif;
-
+	font-family: Montserrat, sans-serif;
 }
 
 #navbar {
@@ -49,11 +48,22 @@ li a:hover:not(.active) {
 }
 
 .bluecontainer{
-	padding:20px;
+	padding:40px;
 	background-color:skyblue;
+	color: white;
 }
 #header{
 	margin-top:30px;
+}
+
+#headercompanyname{
+	font-size: 63px;
+}
+
+.bluecontainer p{
+	font-size: 21px;
+  	font-weight: 200;
+	max-width: 1000px;
 }
 
 @media screen and (max-width: 435px) {
@@ -67,15 +77,19 @@ li a:hover:not(.active) {
 	padding:20px;
 	background-color:skyblue;
   }
+  
+
   #header{
 	margin-top:200px;
   }
+  
 }
 
 </style>
 </head>
 <body>
 
+//Todo Implemented Animated Mobile Menu
 <ul id="navbar">
   <li><a id="companyname" href="#home">HexaneTech</a></li>
   <li class="navbaritems"><a href="#contact">Contact</a></li>
@@ -83,9 +97,11 @@ li a:hover:not(.active) {
   <li class="navbaritems"><a href="#about">About</a></li>
 </ul>
 
-<div id="header" style="height:200px;" class="bluecontainer">
+<div id="header" class="bluecontainer">
 	<center>
-		<h1>HexaneTech</h1>
+		<h1 id="headercompanyname" style="">HexaneTech</h1>
+		<p>Hexane Tech is commited to provide the best solutions for your software needs. 
+		From application development to content management, our team is commited to give you excellence for you in every step of the way.</p>
 	</center>
 </div>
 
