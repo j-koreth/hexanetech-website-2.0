@@ -65,41 +65,41 @@ li a:hover:not(.active) {
 	padding:40px;
 	background-color:skyblue;
 	color: white;
+	max-width: 1000px;
 }
 
 .bluecontainer p{
 	font-size: 21px;
   	font-weight: 200;
-	max-width: 1000px;
 }
 
 .whitecontainer{
 	padding:40px;
 	background-color:white;
 	color: black;
+	max-width: 1000px;
 }
 
 .whitecontainer p{
 	font-size: 21px;
   	font-weight: 200;
-	max-width: 1000px;
 }
 
 @media screen and (max-width: 435px) {
   ul.navbar, ul.navbar li,.navbaritems, #companyname {
-  	float: none;
+  	float: left;
   }
   .navbaritems{
    display: none;
   }
-  #companyname{
-  	  border-bottom: 2px solid gold;
-  	  border-right: hidden;
-  }
   .bluecontainer{
 	padding:20px;
-	background-color:skyblue;
   }
+  
+  .whitecontainer{
+	padding:20px;
+	}
+
   
   #headercompanyname{
 	font-size: 40px;
