@@ -105,14 +105,13 @@ body {
 }
 
 .navbar a:hover {
-	background-color: #ddd;
+	background-color: white;
 	color: black;
 }
 
 .navbar a.active {
 	float: left;
 	font-size: 1.25em;
-	border-right: 2px solid var(--accent-color);
 }
 
 .navbar .icon {
@@ -122,6 +121,7 @@ body {
 #header{
 	background-color: skyblue;
 	margin-top:30px;
+	color: white;
 }
 #headercompanyname{
 	font-size: 65px;
@@ -199,7 +199,7 @@ hr {
 /* Mobile Styling */
 @media screen and (max-width: 600px) {
 	#links {
-		transition: max-height .4s, opacity .4s;
+		transition: max-height .35s, opacity .8s;
 		opacity: 0;
 		max-height: 0;
 		overflow: hidden;
@@ -218,6 +218,7 @@ hr {
 
 	#links ul{
 		float: none;
+		margin: 0;
 	}
 
 	#links ul a{
@@ -232,7 +233,7 @@ hr {
 
     .navbar.responsive #links {
 		opacity: 1;
-		max-height: 999px;
+		max-height: 1000px;
   	}
   	
   	#links a{
